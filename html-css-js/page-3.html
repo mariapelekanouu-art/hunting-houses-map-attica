@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Page 1!!!</title>
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body class="background-black">
+		<a class="HOME-PAGE" href="./index.html">
+			<img class="emoji-house"  src="./emojihouse.PNG" alt="emoji house exit">
+		</a>
+
+		<a class="MAP-PAGE" href="./THEMAP.html">
+			<img class="WORLD-MAP"  src="./world_map.png" alt="emoji map exit">
+		</a>
+
+		<a class="location-pin" href="https://www.google.com/maps/@37.9469588,23.6675949,5a,75y,199.32h,100.95t/data=!3m7!1e1!3m5!1sHj81XOq_YGFIDQ9fxheqbw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-10.94871158155432%26panoid%3DHj81XOq_YGFIDQ9fxheqbw%26yaw%3D199.3184054022168!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D">
+			<img class="pin"  src="./PIN.png" alt="emoji pin location">
+		</a>
+		<audio id="background-music" loop>
+        <source src="spookypiano.mp3" type="audio/mpeg">
+        </audio>
+		
+		<button id="music-button">
+       		<img id="music-icon" src="radio-close.png" alt="Music">
+       </button>
+		
+	
+
+		<script>
+const music = document.getElementById("background-music");
+const button = document.getElementById("music-button");
+const icon = document.getElementById("music-icon");
+
+button.addEventListener("click", () => {
+    if (music.paused) {
+        music.play();
+        icon.src = "radio.png";
+    } else {
+        music.pause();
+        icon.src = "radio-close.png";
+    }
+});
+</script>
+ 
+
+		<main>
+			<h2>The Tower of Dreams: A Haunted Mansion</h2>
+			<p></p>
+
+             <img class="imageofpages" src="FALIRO.jpg" alt="A house">
+			
+			<!-- This is a relative link. It links to another page in the website using a path relative to its own position in the folder structure -->
+			
+			<p class="body-text">An abandoned, three-story stone mansion on Smolensky Street is shrouded in dark legends. Known as the Tower of Dreams or the Black Wolf’s House, it is said to be haunted by the ghost of its last owner, who still wanders its empty rooms, whispering: “Stay away from the tower! It’s mine!”
+
+Built in the 19th century, the 372-square-metre mansion once belonged to the wealthy Kourtalis family. Its final owner, Kyriakos Kourtalis, reportedly dreamed of power and prestige, though some claim his true ambition was to become an opera singer—a dream his father forbade.
+
+Neighbours recall him singing arias from the balcony, dressed in a shabby hat and bow tie. In his final years, he allegedly lost his fortune, descended into madness and died in isolation under mysterious circumstances.
+
+Today, stories of strange electromagnetic activity and ghostly sightings continue to surround the crumbling mansion, keeping its dark history alive.</h5>
+             
+		</main>
+
+		<script src="./script.js"></script>
+
+	</body>
+</html>

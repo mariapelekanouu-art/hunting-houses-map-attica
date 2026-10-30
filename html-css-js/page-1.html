@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Page 1!!!</title>
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body class="background-black">
+		<a class="HOME-PAGE" href="./index.html">
+			<img class="emoji-house"  src="./emojihouse.PNG" alt="emoji house exit">
+		</a>
+
+		<a class="MAP-PAGE" href="./THEMAP.html">
+			<img class="WORLD-MAP"  src="./world_map.png" alt="emoji map exit">
+		</a>
+
+		<a class="location-pin" href="https://www.google.com/maps/@38.025776,23.8012632,189a,75y,295.53h,83.71t/data=!3m7!1e1!3m5!1sAhI2BJAiv7Up38ghFex_pg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.clients6.google.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D6.2858812559613%26panoid%3DAhI2BJAiv7Up38ghFex_pg%26yaw%3D295.52537426910953!7i13312!8i6656?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D">
+			<img class="pin"  src="./PIN.png" alt="emoji pin location">
+		</a>
+		<audio id="background-music" loop>
+        <source src="spookypiano.mp3" type="audio/mpeg">
+        </audio>
+		
+		<button id="music-button">
+       		<img id="music-icon" src="radio-close.png" alt="Music">
+       </button>
+		
+	
+
+		<script>
+const music = document.getElementById("background-music");
+const button = document.getElementById("music-button");
+const icon = document.getElementById("music-icon");
+
+button.addEventListener("click", () => {
+    if (music.paused) {
+        music.play();
+        icon.src = "radio.png";
+    } else {
+        music.pause();
+        icon.src = "radio-close.png";
+    }
+});
+</script>
+
+		<main>
+			<h2>The haunted house in Chalandri and Gina Bachauer’s secret</h2>
+			<p></p>
+
+		
+         <!-- this is an image. It displays an image file saved in the website’s directory. -->
+		 <img class="imageofpages" src="Xalandri.jpg" alt="A house">
+
+		 <p class="body-text">Hidden among the quiet streets of Chalandri stands an old mansion surrounded by mystery and whispers of the past. Once the home of the famous pianist Gina Bachauer, the house is said to hold a dark secret.
+
+In 1976, Bachauer died suddenly, leaving behind a home filled with memories, music and unanswered questions. Since then, strange stories have surrounded the abandoned mansion. Some claim that piano melodies can still be heard echoing through its empty rooms late at night, while others speak of a mysterious woman dressed in black wandering through the garden.
+
+Locals believe her spirit never truly left. Perhaps she is still there, playing her final melody, waiting for the night her music will be heard once again.</p>
+
+
+			<!-- This is a relative link. It links to another page in the website using a path relative to its own position in the folder structure -->
+			
+
+		</main>
+
+		<script src="./script.js"></script>
+
+	</body>
+</html>
