@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Page 1!!!</title>
+		<link rel="stylesheet" href="./style.css">
+		<div id="page-transition"></div>
+	</head>
+	<body class="xalandri-background">
+		<a class="HOME-PAGE" href="./index.html">
+			<img class="emoji-house"  src="./emojihouse.PNG" alt="emoji house exit">
+		</a>
+
+	
+        
+		<audio id="background-music" loop>
+        <source src="spookypiano.mp3" type="audio/mpeg">
+        </audio>
+		
+		<button id="music-button">
+       		<img id="music-icon" src="radio-close.png" alt="Music">
+       </button>
+		
+	
+
+		<script>
+const music = document.getElementById("background-music");
+const button = document.getElementById("music-button");
+const icon = document.getElementById("music-icon");
+
+button.addEventListener("click", () => {
+    if (music.paused) {
+        music.play();
+        icon.src = "radio.png";
+    } else {
+        music.pause();
+        icon.src = "radio-close.png";
+    }
+});
+</script>
+	
+		<main>
+			<h1></h1>
+			<p></p>
+            
+			
+
+		 
+		    
+		</main>
+         
+		<div class="container-for-map-markers">
+			<div class="map-markers-inner">
+        
+				<a href="./page-1.html" class="map-marker" style="left: 68%; top: 45%;">
+					<span class="popup-note">XALANDRI</span>  
+		
+					<div class="map-marker-images-container">
+						<img class="opening-door" src="./crop-door-gif.gif" alt=""/>
+						<img class="closed-door" src="./door-closed.png" alt=""/>
+				         
+    
+					</div>
+				</a>
+
+				<a href="./page-2.html" class="map-marker" style="left: 55%; top: 30%;">
+					<span class="popup-note">PARNITHA</span>
+					<div class="map-marker-images-container">
+						<img class="opening-door" src="./crop-door-gif.gif" alt=""/>
+						<img class="closed-door" src="./door-closed.png" alt=""/>
+					</div>
+				</a>
+
+				<a href="./page-3.html" class="map-marker" style="left: 47%; top: 57%;">
+					<span class="popup-note">FALIRO</span>
+					<div class="map-marker-images-container">
+						<img class="opening-door" src="./crop-door-gif.gif" alt=""/>
+						<img class="closed-door" src="./door-closed.png" alt=""/>
+					</div>
+				</a>
+			</div>
+		</div>
+
+        
+		 
+
+
+		<script src="./script.js"></script>
+
+	</body>
+</html>
+
